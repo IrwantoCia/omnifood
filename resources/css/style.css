@@ -17,6 +17,16 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  height: 0;
+  display: block;
+}
+
 /*------------------------------------------------*/
 /* REUSEABLE COMPONENTS  */
 /*------------------------------------------------*/
@@ -162,7 +172,7 @@ header {
   left: 50%;
   width: 1140px;
   transform: translate(-50%, -50%);
-  padding: ;
+  padding: 0;
 }
 
 .logo {
@@ -236,4 +246,54 @@ header {
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+/*------------------------------------------------*/
+/* HOW IT WORKS */
+/*------------------------------------------------*/
+.section-steps {
+  padding: 80px 0;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  border: #e67e22 2px solid;
+  border-radius: 50%;
+  color: #e67e22;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
