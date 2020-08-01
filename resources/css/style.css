@@ -8,13 +8,15 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -500,7 +502,7 @@ input[type="checkbox"] {
 footer {
   background-color: #333;
   padding: 20px 0;
-  font-size: 80%
+  font-size: 80%;
 }
 footer p {
   color: #888;
