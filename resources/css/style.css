@@ -196,6 +196,7 @@ header {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -326,7 +327,7 @@ header {
 }
 
 .btn-app:link,
-.btn-app:visited{
+.btn-app:visited {
   border-bottom: none;
 }
 
@@ -339,6 +340,9 @@ header {
 /*------------------------------------------------*/
 /* CITIES */
 /*------------------------------------------------*/
+.section-cities {
+  padding: 80px 0;
+}
 
 .box img {
   width: 100%;
@@ -348,4 +352,48 @@ header {
 
 .city-feature {
   margin-bottom: 5px;
+}
+
+/*------------------------------------------------*/
+/* TESTIMONIAL */
+/*------------------------------------------------*/
+
+.section-testimonials {
+  padding: 80px 0;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
+    url("img/back-customers.jpg");
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 140%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -1px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
 }
